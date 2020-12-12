@@ -6,7 +6,18 @@
 
 <p>Hello, @InputValue</p>
 
+<button class="btn btn-primary" @onclick="DisplayText">Display Text</button>
+
+<p>@SomeText</p>
+
 @code {
     public string InputValue { get; set; }
 
+    public string SomeText { get; set; }
+
+    private void DisplayText()
+    {
+        SomeText = string.IsNullOrWhiteSpace(InputValue) ? "please enter text" : $"special text for: {InputValue}";
+
+    }
 }
