@@ -8,16 +8,16 @@
 
 <button class="btn btn-primary" @onclick="DisplayText">Display Text</button>
 
-<p>@SomeText</p>
+<p>@SomeInputText</p>
 
 @code {
     public string InputValue { get; set; }
 
-    public string SomeText { get; set; }
+    public string SomeInputText { get; set; }
 
     private void DisplayText()
     {
-        SomeText = string.IsNullOrWhiteSpace(InputValue) ? "please enter text" : $"special text for: {InputValue}";
+        SomeInputText = string.IsNullOrWhiteSpace(InputValue) ? "please enter text" : $"special text for: {InputValue}";
 
     }
 }
