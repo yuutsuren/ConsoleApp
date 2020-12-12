@@ -1,0 +1,12 @@
+﻿@page "/greeting"
+
+<h3>Greeting</h3>
+
+<input @bind="InputValue" @bind:event="oninput"/>
+
+<p>Hello, @InputValue</p>
+
+@code {
+    public string InputValue { get; set; }
+
+}
