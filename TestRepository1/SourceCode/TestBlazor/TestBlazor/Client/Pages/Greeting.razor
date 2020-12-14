@@ -1,0 +1,23 @@
+﻿@page "/greeting"
+
+<h2>Greeting</h2>
+
+<input @bind="InputValue" @bind:event="oninput"/>
+
+<p>Hello, @InputValue</p>
+
+<button class="btn btn-primary" @onclick="DisplayText">Display Text</button>
+
+<p>@SomeDisplayInputText</p>
+
+@code {
+    public string InputValue { get; set; }
+
+    public string SomeDisplayInputText { get; set; }
+
+    private void DisplayText()
+    {
+        SomeDisplayInputText = string.IsNullOrWhiteSpace(InputValue) ? "please enter text" : $"special text for: {InputValue}";
+
+    }
+}
