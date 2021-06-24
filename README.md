@@ -1,2 +1,2 @@
 # TestRepository
-Repository for Git testing.
+Simple console application with cute heart 🙂
