@@ -1,2 +1,2 @@
 # TestRepository
-Simple console application with cute heart 🙂
+This is simple console application with heart-shaped
